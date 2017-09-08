@@ -53,7 +53,7 @@ private:
             internal_assert(v[1].substr(0, 1) == "s");
             {
                 string str = v[1].substr(1, v[1].size() - 1);
-                bool has_only_digits = (str.find_first_not_of( "0123456789" ) == string::npos);
+                bool has_only_digits = (str.find_first_not_of("0123456789") == string::npos);
                 internal_assert(has_only_digits);
                 stage = atoi(str.c_str());
             }
